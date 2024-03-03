@@ -24,13 +24,17 @@ Weather Data: Weather information includes date, temperature, and weather descri
 
 ## Project Walkthrough
 
-For this project, I aimed to create an Excel file containing information from both box rental and weather data. Initially, I collected only noon rows from the weather data. However, realizing that this approach misconstrued the data, I expanded to include all hours. I set up a Python environment in VS Code, using Pandas to manipulate the data, merging relevant columns into a new Excel file. The 'groupby' method helped aggregate the data, counting daily box rentals.
+For this project, my objective was to create an Excel file containing information from both box rental and weather data. Initially, I collected data only for noon rows from the weather dataset. However, realizing that this approach misrepresented the data, I expanded to include data for 9 am, 3 pm, and 5 pm as well. Considering that the midday average would provide a more accurate depiction of Texas summers, I set up a Python environment in VS Code, using Pandas to manipulate the data and merge relevant columns into a new Excel file. The 'groupby' method proved useful in aggregating the data and counting daily box rentals.
+
+I also revisited the storage data after completing this project. When the dates were grouped together to count the number of box rentals in a single day, it omitted the days where zero box rentals occurred. I rectified this error, ensuring that there were 365 rows of data, one for every day of the year.
 
 Once the data analysis was complete, I uploaded the new Excel spreadsheet to Tableau, where I built a dashboard to visualize my findings.
 
 ## Results & Evaluations
 
-The data suggests that an increase in temperature during the summer may lead to a decline in box rentals. However, other contributing factors might influence this trend. Weather descriptions showed no correlation between higher box rentals and sunny days. After analyzing the data, it became clear that a more accurate picture would emerge with over 3 years of box rental data. The storage company began operations in April 2022, and 2023 marked their first full year. Future data analysis with a more extended timeframe could provide a clearer understanding.
+The data suggests that an increase in temperature during the summer may lead to a decline in box rentals. However, other contributing factors might influence this trend. The weather descriptions did show a higher daily box rental average for a clear day when compared to a rainy or cloudy day. However, throughout the year, there were more cloudy days, which could lead to a lower average.
+
+After analyzing the results, it became clear that a more accurate picture would emerge with over three years of box rental data, as a longer time period could reveal a specific pattern. The storage company commenced operations in April 2022, and 2023 marked its first full year. Future data analysis with an extended timeframe could provide a clearer understanding.
 
 ## Conclusion
 
